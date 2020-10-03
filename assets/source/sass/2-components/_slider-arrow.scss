@@ -1,0 +1,47 @@
+
+
+/*=====================================
+            SLIDER ARROW STYLE
+======================================*/
+.dandik,
+.bamdik {
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    color: $wh__color;
+    background: $brand__color;
+    text-shadow: $primary__text__shadow;
+    box-shadow: $primary__box__shadow;
+    cursor: pointer;
+    z-index: 1;
+
+     &:hover{
+        color: $wh__color;
+        background: $brand__hover__color;
+    }
+}
+
+.dandik {
+    top: 50%;
+    right: -25px;
+}
+
+.bamdik{
+    top: 50%;
+    left: -25px;
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    .dandik {
+        right: 0px;
+    }
+
+    .bamdik {
+        left: 0px;
+    }
+}

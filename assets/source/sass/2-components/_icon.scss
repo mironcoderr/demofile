@@ -1,0 +1,44 @@
+
+
+
+/*=====================================
+            ALL ICON STYLE
+======================================*/
+.icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    text-shadow: $primary__text__shadow;
+}
+
+.icon-inline {
+    color: $wh__color;
+    background: $brand__color;
+
+    &:hover {
+        background: $brand__hover__color;
+    }
+}
+
+.icon-outline {
+    color: $icon__color;
+    background: $wh__color;
+    border: 1px solid $border__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.icon-light {
+    color: $icon__color;
+    background: $light__color;
+
+    &:hover {
+        background: $light__hover__color;
+    }
+}

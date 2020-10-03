@@ -1,0 +1,195 @@
+
+
+
+/*=====================================
+            ALL FORM STYLE
+======================================*/
+.form-grid {
+    @include flex__center;
+    justify-content: space-between;
+    background: $shape__one;
+    border-radius: 8px;
+
+    input {
+        width: 100%;
+        height: 45px;
+        border: none;
+        background: transparent;
+        padding: 0px 20px;
+    }
+
+    .btn {
+        width: 180px;
+        height: 45px;
+        padding: 14px 0px;
+        text-align: center;
+    }
+}
+
+
+
+
+/*=====================================
+         NAVBAR SEARCH-BAR STYLE
+======================================*/
+.navbar-form {
+    display: none;
+    width: 100%;
+
+    form {
+        @include flex__center;
+        justify-content: space-between;
+        background: #fbf2f2;
+        border-radius: 8px;
+        margin: 0px 50px;
+    
+        input {
+            width: 100%;
+            height: 45px;
+            border: none;
+            background: transparent;
+            padding: 0px 20px;
+        }
+    
+        .btn {
+            width: 50px;
+            text-align: center;
+            padding: 14px 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-form {
+        width: 100%;
+
+        form {
+            margin: 0px 15px;
+
+            input {
+                width: 160px;
+                height: 35px;
+                padding: 0px 15px;
+                font-size: 14px;
+    
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+    
+            .btn {
+                width: 35px;
+                padding: 8px 0px;
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+/*=====================================
+         BANNER SEARCH-BAR STYLE
+======================================*/
+.banner-form {
+    @include flex__center;
+    justify-content: space-between;
+    background: $wh__color;
+    border-radius: 8px;
+    width: 700px;
+    margin: 0 auto;
+
+    input {
+        width: 100%;
+        height: 45px;
+        border: none;
+        background: transparent;
+        padding: 0px 20px;
+    }
+
+    .btn {
+        width: 180px;
+    }
+}
+
+/*=====================================
+            SIGNIN-UP FORM STYLE
+======================================*/
+.form {
+    margin-bottom: 45px;
+}
+
+.form-label {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:focus-within {
+        button {
+            i {
+                display: block;
+            }
+        }
+
+        small {
+            display: block;
+        }
+    }
+
+    input {
+        border: none;
+        width: 100%;
+        height: 45px;
+        border-radius: 8px;
+        padding: 0px 55px 0px 20px;
+        border: 1px solid #e8e8e8;
+        @include cursor__transition;
+
+        &:focus-within {
+            border: 1px solid $brand__color;
+        }
+    }
+
+    button {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        i {
+            font-size: 16px;
+            color: #aaaaaa;
+            display: none;
+        }
+    }
+
+    small {
+        display: none;
+        padding: 3px 20px;
+    }
+}
+
+.form-suggest {
+    text-align: center;
+
+    p {
+        color: $heading__color;
+
+        a {
+            font-weight: 500;
+        
+            &:hover {
+                color: $brand__color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.form-btn {
+    .btn {
+        width: 100%;
+        height: 45px;
+    }
+}
